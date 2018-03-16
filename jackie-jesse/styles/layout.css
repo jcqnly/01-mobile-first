@@ -1,29 +1,55 @@
+nav {
+  padding-left: 0;
+}
+
 .byline {
   background-color: white;
 }
 
-.nav-ul {
+.nav-ul{
   display: none;
 }
 
 nav:hover .nav-ul {
-  display: block;
+  display: inline;
+  color: #333;
+
 } 
+
+nav:hover .nav-ul li{
+  padding: 5% 5% 5% 0;
+}
+
 
 .icon-menu {
   display: block;
+  position: fixed;
+  top: 0;
+  right: 0;
+  font-size: 3rem;
 }
 
 img {
   display: block;
+  width: 100%;
 }
 
 @media only screen and (min-width: 640px) {
   .nav-ul {
-    display: block;
+    display: inline;
+    width: 20%;
   }
   
   .icon-menu {
     display: none;
   }
+
+  nav:hover .nav-ul{
+    display: block;
+  }
+
+  img{
+    width: 60%;
+  }
+
 }

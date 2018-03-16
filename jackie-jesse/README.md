@@ -20,3 +20,5 @@ Responsive Web Design techniques are implemented in this site.  Only HTML and CS
 ## Credits and Collaborations
 <!-- Give credit (and a link) to other people or resources that helped you build this application. -->
 -->03-15-2018 7:22pm - Application design has been initialized.
+-->03-15-2018 9:54pm - Did our best with mobile view
+-->03-15-2018 10:18 - Completed
