@@ -1,0 +1,9 @@
+html, body {
+  width: 100%;
+  font-family: helvetica;
+}
+
+header {
+  background: #FFECA0;
+  padding: 1.5%;
+}

@@ -3,16 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <title>Lab 1</title>
-  <!-- TODO: Add a meta tag to properly set the viewport and initial scale -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- TODO: Add a link to a normalize.css file, which should be in your vendor/styles/ directory -->
-
+  <link rel="stylesheet" href="vendor/normalize.css">
   <!-- TODO: Link in the provided styles/icons.css file so that you can use icon fonts -->
-
+  <link rel="stylesheet" href="vendor/styles/icons.css">
   <!-- TODO: Link in your SMACSS-appropriate CSS files: base, layout, and modules -->
-
-  <!-- COMMENT: Explain the ordering of the loading of the stylesheets -->
-  <!-- PUT YOUR RESPONSE HERE -->
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/layout.css">
+  <link rel="stylesheet" href="styles/module.css">
+  <!-- COMMENT: Explain the ordering of the loading of the stylesheets-->
+  
+  <!-- Normalize has to go first because it wipes the css slate clean.  With the SMACSS process, it goes general to specific because files loaded later can override styles in previous sheets.  -->
 
   <!-- REVIEW: This is the favicon -->
   <link rel="icon" type="image/x-icon" href="https://avatars2.githubusercontent.com/u/18607604?v=3&s=200">
@@ -22,7 +24,7 @@
   <header class="site-header clearfix">
     <!-- COMMENT: Read the CSS Tricks article on clearfix, and explain in your own words how they are used. -->
     <!-- https://css-tricks.com/snippets/css/clear-fix/ -->
-    <!-- PUT YOUR RESPONSE HERE -->
+    <!-- Clearfixes are meant to clear floats from the children of a parent element.  This controls where elements will be floated in relation to the cleared element.  The idea was to control space around floated elements.  Then it was designed with backwards compatibility in mind. -->
 
     <section class="heading-group-h1">
       <h1>
@@ -32,8 +34,8 @@
     </section>
     <nav class="main-nav">
       <!-- TODO: Add a hamburger menu icon here, which will show/hide depending on screen width (desktop vs. mobile). -->
-
-      <ul>
+      <div class = "icon-menu"></div>
+      <ul id="nav-menu" class="nav-ul">
         <li class="tab" data-content="articles"><a href="#" class="icon-home"> Home</a></li>
         <li class="tab" data-content="about"><a href="#" class="icon-address-book"> About</a></li>
         <li><a href="http://twitter.com/brookr" target="_blank" class="icon-twitter3"> Twitter</a></li>
@@ -44,10 +46,10 @@
   <main>
     <section id="articles" class="tab-content">
       <article class="clearfix" data-category="bacon">
-          <header>
+          <header class="byline">
             <h1>Bacon Ipsum</h1>
             <!-- REVIEW: Look closely at the HTML structure of this "byline" div, as it will affect how you choose to target these elements in CSS. -->
-            <div class="byline">
+            <div>
               By <address><a href="http://www.imdb.com/name/nm0000102/">Kevin Bacon</a></address>
               published <time pubdate="" datetime="2015-11-05" title="2015-11-05">about 718 days ago</time>
             </div>
