@@ -35,17 +35,23 @@ img {
 }
 
 @media only screen and (min-width: 640px) {
-  .nav-ul {
-    display: inline;
-    width: 20%;
+  .main-nav{
+    padding-bottom: 3%;
   }
   
-  .icon-menu {
-    display: none;
+  .nav-ul {
+    display: inline;
   }
 
-  nav:hover .nav-ul{
-    display: block;
+  nav ul li {
+    float: left;
+    padding: none;
+    clear: top;
+   
+  }
+
+  .icon-menu {
+    display: none;
   }
 
   img{
